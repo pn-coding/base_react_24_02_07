@@ -125,7 +125,36 @@ export const Ex13 = () => {
   );
 };
 
-// ######################
-// isValid처리하기
-// helmet
-// ######################
+// *useForm()
+// =>폼 관리 훅
+// ex)
+// const {
+//   register,
+//   handleSubmit,
+//   formState:{
+//     isValid,
+//     errors
+//   }
+// } = useForm();
+
+// 1.register: 인풋을 관리하며 name 및 추가적인 옵션 적용 가능
+// =>{...register("인풋명", {
+//   required: "빈값일때 오류 메세지 작성",
+//   minLength:{
+//     value: 최소 길이 값,
+//     message:"최소 길이 오류시 메세지 작성"
+//   },
+//   pattern:{
+//     value:/정규식 패턴/,
+//     message:"정규식 패던 오류시 메세지 작성"
+//   }
+// })}
+
+// 2.handleSubmit()
+// =>form태그에 onSubmit이벤트에 적용
+// =>폼에 작성 완료 후 버튼을 누르면 실행하는 이벤트
+
+// 3.formState
+// =>폼 상태 관리
+// =>errors: 폼 관리중 에러내용을 객체로 반환함
+// =>isValue: 유효성 검사 여부에 따라 boolean값으로 반환
