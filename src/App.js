@@ -14,6 +14,7 @@ import { Ex09 } from "./components/Ex09/Ex09";
 import { Ex11 } from "./components/Ex11/Ex11";
 import { Ex12 } from "./components/Ex12/Ex12";
 import { Ex13 } from "./components/Ex13/Ex13";
+import { Ex15 } from "./components/Ex15/Ex15";
 
 const App = () => {
   return (
@@ -57,7 +58,10 @@ const App = () => {
       {/* <Ex12 /> */}
       {/* 12일차 끝 */}
 
-      <Ex13 />
+      {/* <Ex13 /> */}
+      {/* 13~14일 끝 */}
+
+      <Ex15 />
     </>
   );
 };
