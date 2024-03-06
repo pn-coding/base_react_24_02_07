@@ -8,6 +8,7 @@ import {
 } from "../styles/loginStyle";
 import { ButtonUi } from "../components/ButtonUi";
 import { BottomConUi } from "../components/BottomConUi";
+import { PageTitle } from "../components/PageTitle";
 
 export const Signup = () => {
   const {
@@ -22,6 +23,7 @@ export const Signup = () => {
 
   return (
     <Container>
+      <PageTitle title={"Sign up"} />
       <Form onSubmit={handleSubmit(handleLogin)}>
         <Title>SIGN UP</Title>
         <input

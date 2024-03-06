@@ -9,6 +9,7 @@ import {
 import { ButtonUi } from "../components/ButtonUi";
 import { BottomConUi } from "../components/BottomConUi";
 import { useNavigate } from "react-router-dom";
+import { PageTitle } from "../components/PageTitle";
 
 const user = {
   id: 0,
@@ -41,11 +42,16 @@ export const Login = () => {
     }
 
     if (username == user.username && password == user.password) {
+      // nav("/");
+      nav("/", {
+        replace: true,
+      });
     }
   };
 
   return (
     <Container>
+      <PageTitle title={"Login"} />
       <Form onSubmit={handleSubmit(handleLogin)}>
         <Title>LOGIN</Title>
         <input
